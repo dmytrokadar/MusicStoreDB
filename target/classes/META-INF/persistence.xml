@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <class>DataBaseClasses.Order</class>
+        <class>DataBaseClasses.Customer</class>
+        <class>DataBaseClasses.HaveProduct</class>
+        <class>DataBaseClasses.HaveSection</class>
+<!--        <class>DataBaseClasses.MakeOrder</class>-->
+        <class>DataBaseClasses.Manufacturer</class>
+        <class>DataBaseClasses.Person</class>
+<!--        <class>DataBaseClasses.Process</class>-->
+        <class>DataBaseClasses.Product</class>
+        <class>DataBaseClasses.Section</class>
+        <class>DataBaseClasses.Shop</class>
+        <class>DataBaseClasses.Storage</class>
+        <class>DataBaseClasses.StoreProduct</class>
+        <class>DataBaseClasses.Supervisor</class>
+        <class>DataBaseClasses.Supply</class>
+        <class>DataBaseClasses.WebShop</class>
+        <class>DataBaseClasses.Worker</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://slon.felk.cvut.cz:5432/kadardmy"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+<!--            <property-->
+<!--                    name="javax.persistence.jdbc.user"-->
+<!--                    value="kadardmy"/>-->
+<!--            <property-->
+<!--                    name="javax.persistence.jdbc.driver"-->
+<!--                    value="org.postgresql.Driver"/>-->
+<!--            <property-->
+<!--                    name="javax.persistence.jdbc.password"-->
+<!--                    value="kadardmy_DBS212"/>-->
+<!--            <property-->
+<!--                    name="javax.persistence.schema-generation.database.action"-->
+<!--                    value="create"/>-->
+            <property name="hibernate.connection.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.user" value="kadardmy"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.connection.password" value="kadardmy_DBS212"/>
+        </properties>
+    </persistence-unit>
+</persistence>
